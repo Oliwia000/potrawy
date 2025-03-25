@@ -4,8 +4,7 @@
              x:Class="potrawy.View.EdiPage"
              Title="EdiPage">
     <ScrollView>
-
-        <VerticalStackLayout Spacing="20">
+        <VerticalStackLayout Spacing="20" Padding="10">
             <Label Text="Edycja potrawy" FontSize="Subtitle"/>
             <Image Source="{Binding ImageUrl}" WidthRequest="100" HeightRequest="100"/>
             <Entry Text="{Binding Name}"/>
@@ -25,9 +24,6 @@
             <Entry Placeholder="Nowy składnik" x:Name="Ing" />
             <Button Text="Dodaj Składnik" Clicked="AddIngredient"/>
             <Button Text="Zapisz" Clicked="SaveEditDish"/>
-
-
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>

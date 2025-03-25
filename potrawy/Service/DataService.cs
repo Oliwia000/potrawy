@@ -7,7 +7,6 @@ using potrawy.View;
 using potrawy.Model;
 using System.Collections.ObjectModel;
 
-
 namespace potrawy.Service
 {
   public  class DataService

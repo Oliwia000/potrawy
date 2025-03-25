@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using potrawy.Model;
+﻿using potrawy.Model;
 using potrawy.Service;
 using potrawy.View;
-using static System.Reflection.Metadata.BlobBuilder;
+using System.Collections.ObjectModel;
 
 namespace potrawy.ViewModel
 {
@@ -19,17 +13,19 @@ namespace potrawy.ViewModel
         private readonly DataService _dataService;
         public MainViewModel(DataService dataService, INavigation navigation)
         {
-            _navigation = navigation;
             _dataService = dataService;
-
-           Dania = _dataService.dania;
-
+            _navigation = navigation;
+            Dania = _dataService.dania;
             ShowDetailedCmd = new Command<dania>(ShowDetails);
         }
-        private async void ShowDetails(dania dania)
+        private async void ShowDetails(dania dish)
         {
-            if (dania != null)
-                await _navigation.PushAsync(new EdiPage(dania, _navigation));
+            if (dish != null)
+                await _navigation.PushAsync(new EdiPage(dish, _navigation));
+        }
+        public void RefreshData()
+        {
+            Dania = _dataService.dania;
         }
     }
 }
