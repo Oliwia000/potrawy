@@ -20,7 +20,7 @@ namespace potrawy.Service
                new dania
 {
     Name = "Pizza Margherita",
-    Price = 20.50,
+    Price = 34.50,
     Description = "Klasyczna pizza z pomidorami, mozzarellą i bazylią.",
     Type = "Pizza",
     Ingredients = new ObservableCollection<string> { "Ciasto", "Sos pomidorowy", "Mozzarella", "Bazylia" },
@@ -38,20 +38,30 @@ new dania
 new dania
 {
     Name = "Lasagne",
-    Price = 22.00,
+    Price = 32.00,
     Description = "Lasagne z mięsem mielonym, serem i sosem pomidorowym.",
     Type = "Pasta",
     Ingredients = new ObservableCollection<string> { "Makaron", "Mięso mielone", "Ser", "Sos pomidorowy" },
     ImageUrl = "https://staticsmaker.iplsc.com/smaker_production_2023_01_25/f7ecd17cbc17b7234143fa5b3a293872-content.jpg"
 },
-/*new dania
+
+new dania
+{
+    Name = "Zupa Pomidorowa",
+    Price = 10.50,
+    Description = "Tradycyjna polska zupa pomidorowa z ryżem.",
+    Type = "Zupa",
+    Ingredients = new ObservableCollection<string> { "Pomidor", "Ryż", "Bulion", "Śmietana" },
+    ImageUrl = "https://img.wprost.pl/img/wysmienita-zupa-pomidorowa-ze-swiezych-pomidorow-z-tego-przepisu-przygotowywala-ja-moja-babcia/1f/1a/c69122a80c37084cbe83608f4120.webp"
+},
+new dania
     {
         Name = "Żurek",
         Price = 12.00,
         Description = "Tradycyjna polska zupa na zakwasie, podawana z białą kiełbasą i jajkiem.",
         Type = "Zupa",
         Ingredients = new ObservableCollection<string> { "Zakwas", "Biała kiełbasa", "Jajko", "Chrzan", "Bulion" },
-        ImageUrl = "Zurek.jpg"
+        ImageUrl = "żurek.jpg"
     },
 new dania
     {
@@ -61,16 +71,7 @@ new dania
         Type = "Pizza",
         Ingredients = new ObservableCollection<string> { "Ciasto", "Sos pomidorowy", "Mozzarella", "Pepperoni", "Oregano" },
         ImageUrl = "pizza.jpg"
-    },*/
-new dania
-{
-    Name = "Zupa Pomidorowa",
-    Price = 10.50,
-    Description = "Tradycyjna polska zupa pomidorowa z ryżem.",
-    Type = "Zupa",
-    Ingredients = new ObservableCollection<string> { "Pomidor", "Ryż", "Bulion", "Śmietana" },
-    ImageUrl = "https://img.wprost.pl/img/wysmienita-zupa-pomidorowa-ze-swiezych-pomidorow-z-tego-przepisu-przygotowywala-ja-moja-babcia/1f/1a/c69122a80c37084cbe83608f4120.webp"
-}
+    }
             };
         }
     }
