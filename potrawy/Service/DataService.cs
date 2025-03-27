@@ -56,12 +56,12 @@ new dania
 },
 new dania
     {
-        Name = "Żurek",
+        Name = "Zurek",
         Price = 12.00,
         Description = "Tradycyjna polska zupa na zakwasie, podawana z białą kiełbasą i jajkiem.",
         Type = "Zupa",
         Ingredients = new ObservableCollection<string> { "Zakwas", "Biała kiełbasa", "Jajko", "Chrzan", "Bulion" },
-        ImageUrl = "żurek.jpg"
+        ImageUrl = "zurek.jpg"
     },
 new dania
     {
