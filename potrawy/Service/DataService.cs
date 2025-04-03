@@ -54,15 +54,7 @@ new dania
     Ingredients = new ObservableCollection<string> { "Pomidor", "Ryż", "Bulion", "Śmietana" },
     ImageUrl = "https://img.wprost.pl/img/wysmienita-zupa-pomidorowa-ze-swiezych-pomidorow-z-tego-przepisu-przygotowywala-ja-moja-babcia/1f/1a/c69122a80c37084cbe83608f4120.webp"
 },
-new dania
-    {
-        Name = "Zurek",
-        Price = 12.00,
-        Description = "Tradycyjna polska zupa na zakwasie, podawana z białą kiełbasą i jajkiem.",
-        Type = "Zupa",
-        Ingredients = new ObservableCollection<string> { "Zakwas", "Biała kiełbasa", "Jajko", "Chrzan", "Bulion" },
-        ImageUrl = "zurek.jpg"
-    },
+
 new dania
     {
         Name = "Pizza Pepperoni",
@@ -71,6 +63,15 @@ new dania
         Type = "Pizza",
         Ingredients = new ObservableCollection<string> { "Ciasto", "Sos pomidorowy", "Mozzarella", "Pepperoni", "Oregano" },
         ImageUrl = "pizza.jpg"
+    },
+new dania
+    {
+        Name = "Zurek",
+        Price = 12.00,
+        Description = "Tradycyjna polska zupa na zakwasie, podawana z białą kiełbasą i jajkiem.",
+        Type = "Zupa",
+        Ingredients = new ObservableCollection<string> { "Zakwas", "Biała kiełbasa", "Jajko", "Chrzan", "Bulion" },
+        ImageUrl = "zurek.jpg"
     }
             };
         }

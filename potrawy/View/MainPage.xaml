@@ -8,7 +8,7 @@
     <ScrollView>
         <VerticalStackLayout
             Padding="30"
-            Spacing="20">
+            Spacing="40">
             <Label Text="Potrawy" FontSize="Large"/>
             <ListView ItemsSource="{Binding Dania}">
                 <ListView.ItemTemplate>
