@@ -27,7 +27,7 @@
                                     </Label.FormattedText>
                                 </Label>
                                 <Button Text="Edytuj" Command="{Binding Source={RelativeSource AncestorType={x:Type vm:MainViewModel}},
-                                    Path=ShowDetailedCmd}" CommandParameter="{Binding}" />
+                                    Path=ShowDetailedCmd}" CommandParameter="{Binding}" Margin="8" />
                             </VerticalStackLayout>
                         </ViewCell>
                     </DataTemplate>
